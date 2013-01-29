@@ -1,0 +1,15 @@
+#summary One-sentence summary of this page.
+
+= Who we are? =
+
+We are a group of students of IT Engineering that loves the programming and the security.
+
+We are developing nutricula to research about our passion, our life's.
+
+The nutricula team is formed by:
+
+-Andoni Diaz - Project leader
+
+-Ezequiel Rodriguez - Project documentator
+
+-Alex Ferrer - Project programmer
