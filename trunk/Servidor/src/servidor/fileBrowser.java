@@ -189,15 +189,20 @@ public class fileBrowser extends javax.swing.JFrame {
                 new fileBrowser().setVisible(true);
                 
                 rutaActual = new String("C:\\");
-                cargarDirectorio("C:\\Archivos\\ de\\ programa");
+                cargarDirectorio("C:\\");
                 tablaFicheros.addMouseListener(new MouseAdapter() 
                 {
                     public void mouseClicked(MouseEvent e) 
                     {
                         int fila = tablaFicheros.rowAtPoint(e.getPoint());
                         int columna = tablaFicheros.columnAtPoint(e.getPoint());
+                        String nombreNuevoFichero;
                         Object nuevoFichero = tablaFicheros.getValueAt(fila, columna);
-                        rutaActual = rutaActual + nuevoFichero.toString() + "\\" ;
+                        nombreNuevoFichero = nuevoFichero.toString();
+                        if(nombreNuevoFichero.equals("Archivos de programa")){
+                            nombreNuevoFichero = "Program Files";
+                        }
+                        rutaActual = rutaActual + nombreNuevoFichero + "\\" ;
                         System.out.println(rutaActual);
                         cargarDirectorio(rutaActual);
                     }
@@ -208,7 +213,7 @@ public class fileBrowser extends javax.swing.JFrame {
     }
     static void cargarDirectorio(String directorioActual){
         vaciarTabla();
-        System.out.println("C:\\Archivos\\ de\\ programa");
+        
         File dir = new File(directorioActual);
         
         String[] ficheros = dir.list();
