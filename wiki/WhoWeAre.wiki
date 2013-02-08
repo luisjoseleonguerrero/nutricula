@@ -2,9 +2,7 @@
 
 = Who we are? =
 
-We are a group of students of IT Engineering that loves the programming and the security.
-
-We are developing nutricula to research about our passion, our life's.
+We are developing nutricula to research about the security of today computers.
 
 The nutricula team is formed by:
 
